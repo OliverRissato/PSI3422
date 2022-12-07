@@ -10,7 +10,7 @@
 MNIST mnist(14, true, true);
 
 int main(int argc, char *argv[]) {
-    mnist.le("/home/psi3422/shared/mnist");
+    mnist.le("/home/oliver/Documents/PSI3442/Aula6/mnist");
     vector<int> indices(1); vector<float> dists(1);
     flann::Index ind(mnist.ax,flann::KDTreeIndexParams(4));
     if (argc<2) erro("camclient1 servidorIpAddr\n");
